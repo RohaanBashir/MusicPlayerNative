@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="2dp"
+    android:layout_marginBottom="5dp"
+    >
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/LayoutIV"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginStart="5dp"
+        />
+
+    <TextView
+
+        android:textSize="20dp"
+        android:id="@+id/nameSong"
+        android:layout_width="290dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@id/LayoutIV"
+        android:text="Song Name"
+
+        />
+
+    <TextView
+
+        android:id="@+id/duration"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="00:00"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/album"
+        android:layout_width="290dp"
+        android:layout_height="20dp"
+        android:text="Album"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/LayoutIV"
+
+        />
+
+</RelativeLayout>

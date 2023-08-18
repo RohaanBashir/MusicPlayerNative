@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Rohaan Music Player</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="About">"Welcome to my project app! This app was developed as part of my project, with the goal of providing users with a convenient and easy-to-use tool for playing Music.
+    With this app, you can play music. I designed the app with user experience in mind, ensuring that it is easy to navigate and intuitive to use. I am committed to continuing to improve the app and adding new features based on user feedback.
+    Thank you , and I hope you find it helpful in achieving your goals!"</string>
+</resources>
