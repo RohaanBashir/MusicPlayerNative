@@ -18,7 +18,7 @@ import java.io.File
 
 class MainActivity : AppCompatActivity(){
 
-
+     val PERMISSION_REQUEST_CODE = 1001
     override fun onCreate(savedInstanceState: Bundle?) {
 
 
@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity(){
         var ViewPager:ViewPager2 = findViewById(R.id.viewPager)
 
 
-        RequestRuntimePermission()
+        requestPermissions()
 
         var Myadapter = ViewPagerAdapter(this)
 
@@ -49,15 +49,15 @@ class MainActivity : AppCompatActivity(){
                 }
             }
         }.attach()
+
     }
 
-    //permission requesting
-    private fun RequestRuntimePermission(){
 
-        //checking if permission given
-        if(ActivityCompat.checkSelfPermission(this, Manifest.permission.READ_MEDIA_AUDIO)
-            != PackageManager.PERMISSION_GRANTED){
-            ActivityCompat.requestPermissions(this, arrayOf(android.Manifest.permission.READ_MEDIA_AUDIO),13)
+    //permission requesting
+    private fun requestPermissions() {
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE), PERMISSION_REQUEST_CODE)
+        } else {
 
         }
     }
